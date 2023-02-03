@@ -1,0 +1,9 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.Register, name = 'register'),
+    path('login', views.LogIn, name = 'login'),
+    path('home', views.Home, name = 'home'),
+    path('prediction/<str:pk>/', views.Prediction, name='prediction'),
+]

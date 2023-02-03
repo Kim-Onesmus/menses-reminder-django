@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav class="navbar background">
+            <h1>Menses Reminder</h1>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="text">
+            Hello, {{user.username}} we are happy to see you on Menses Reminder platform. <br>
+            Here we will remind on when to expect your menstration; if its a normal one, <br> 
+            the best time to have a baby and also predict the what baby you may conceive; either a boy or a girl. <br>
+            Let us predict before we jump into books..
+            
+        </div>
+        <hr>
+        <h2>Predictions</h2>
+        <div class="predictions">
+            <div class="prediction">
+                <h5>Menstration Predictions</h5>
+                
+            </div>
+            <div class="prediction">
+                <h5>Pregnancy Predictions</h5>
+            </div>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>

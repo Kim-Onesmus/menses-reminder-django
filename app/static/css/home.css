@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: bisque;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+.background {
+    background-color: dodgerblue;
+    height: 80px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+}
+.content {
+    margin-top: 100px;
+}
+.text {
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgb(223, 219, 219);
+    width: 500px;
+    height: auto;
+    margin: 0% auto;
+}
+h2 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+    margin-top: 0;
+}
+.predictions {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.prediction {
+    width: 30%;
+    background-color: rgb(223, 219, 219);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 10px;
+}

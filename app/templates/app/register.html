@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Menses Reminder</h2>
+    <h3>Register</h3>
+    <div class="message">
+        {% for message in messages %}
+        <p>{{message}}</p>
+        {% endfor %}
+    </div>
+    <div class="from">
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="first_name">Name</label><br>
+            <input type="text" name="first_name" id="input" placeholder="Name" required><br><br>
+            <label for="">Username</label><br>
+            <input type="text" name="username" id="input" placeholder="Username" required><br><br>
+            <label for="">Gender</label><br>
+            <select name="gender" id="input" required>
+                <option value="........">.........</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+            <label for="">Passsword</label><br>
+            <input type="password" name="password" id="input" placeholder="Password" required><br><br>
+            <label for="">Confirm Password</label><br>
+            <input type="password" name="password1" id="input" placeholder="Confirm password" required><br><br>
+            <button>Register</button><br><br>
+            <p>Already have an account <a href="{% url 'login' %}">LogIn</a></p>
+        </form>
+    </div>
+</body>
+</html>
